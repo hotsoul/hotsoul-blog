@@ -1,0 +1,13 @@
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+baseURL = "https://blog.hotsoul.jp/"
+canonifyURLs = true
+title = "ホットソウルブログ"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
