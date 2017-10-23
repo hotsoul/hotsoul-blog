@@ -1,13 +1,24 @@
 contentDir = "content"
+languageCode = "ja"
 layoutDir = "layouts"
 publishDir = "public"
 buildDrafts = false
 baseURL = "https://blog.hotsoul.jp/"
 canonifyURLs = true
 title = "ホットソウルブログ"
+copyright = "株式会社ホットソウル 2017"
 
 [taxonomies]
   category = "categories"
   tag = "tags"
 
 [params]
+  description = "湘南茅ヶ崎にある株式会社ホットソウルの中の人々がつづるブログです。\
+    株式会社ホットソウルでは、ICT事業を中心に、中小企業診断士の資格を活かした経営コンサルティング事業や、農/食関連の新規事業を展開しようとしています。\
+    日常のちょっとしたことがらやICT関連の話題、中小企業の経営について、農業や食に関連する話題など、コンテンツを充実させていきます。"
+  logo = "images/hotsoul_logo.png"
+  homepage = "https://www.hotsoul.jp"
+  email = "info@hotsoul.jp"
+  twitter = "https://twitter.com/HotsoulDotJp"
+  facebook = "https://www.facebook.com/profile.php?id=100015057339736"
+  github = "https://github.com/hotsoul"

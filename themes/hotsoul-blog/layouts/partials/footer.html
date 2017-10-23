@@ -1,11 +1,12 @@
-
-  <footer>
-    <div class="hr"></div>
-    <div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}</div>
-  </footer>
-</div>
-
-<!-- この辺にgoogleAnalyticsの仕込みをするらしい -->
-
-</body>
-</html>
+<footer role="contentinfo">
+  <div class="hr"></div>
+  <div class="footer-link">
+    {{ with .Site.Params.homepage }}<a href="{{ . }}" target="_blank"><img src="images/web.png" width="24" height="24" alt="homepage"></a>{{ end }}
+    {{ with .Site.Params.email }}<a href="mailto:{{ . }}" target="_blank"><img src="images/mail.png" width="24" height="24" alt="mail"></a>{{ end }}
+    {{ with .Site.Params.twitter }}<a href="{{ . }}" target="_blank"><img src="images/twi.png" width="24" height="24" alt="twitter"></a>{{ end }}
+    {{ with .Site.Params.facebook }}<a href="{{ . }}" target="_blank"><img src="images/fb.png" width="24" height="24" alt="facebook"></a>{{ end }}
+    {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank"><img src="images/github.png" width="24" height="24" alt="github"></a>{{ end }}
+    {{ with .Site.Params.gitlab }}<a href="{{ . }}" target="_blank">GitLab</a>{{ end }}
+  </div>
+  <div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}</div>
+</footer>

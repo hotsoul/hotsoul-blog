@@ -1,0 +1,7 @@
+{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ with $paginator.Prev }}
+      <a class="prev" href="{{ .URL }}">Prev</a>
+    {{ end }}
+    {{ with $paginator.Next }}
+      <a class="prev" href="{{ .URL }}">Next</a>
+    {{ end }}
