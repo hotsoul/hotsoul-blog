@@ -1,7 +1,17 @@
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-    {{ with $paginator.Prev }}
-      <a class="prev" href="{{ .URL }}">Prev</a>
-    {{ end }}
-    {{ with $paginator.Next }}
-      <a class="prev" href="{{ .URL }}">Next</a>
-    {{ end }}
+{{ .Prev }}
+{{ .Next }}
+{{ range .Pages }}
+  {{ if eq .Title "1st Post" }}
+    {{ print 1 }}
+    <a href="{{ .NextInSection | urlize }}">aaa</a>
+  {{ end }}
+  {{ if eq .Title "2nd Post" }}
+    {{ print 2 }}
+  {{ end }}
+  {{ if eq .Title "3rd Post" }}
+    {{ print 3 }}
+  {{ end }}
+
+{{ end }}
+{{ .Title }}
