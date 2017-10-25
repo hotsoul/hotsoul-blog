@@ -1,12 +1,13 @@
+baseURL = "https://blog.hotsoul.jp/"
+buildDrafts = false
+canonifyURLs = true
 contentDir = "content"
+copyright = "株式会社ホットソウル 2017"
+hasCJKLanguage = true
 languageCode = "ja"
 layoutDir = "layouts"
 publishDir = "public"
-buildDrafts = false
-baseURL = "https://blog.hotsoul.jp/"
-canonifyURLs = true
 title = "ホットソウルブログ"
-copyright = "株式会社ホットソウル 2017"
 
 [taxonomies]
   category = "categories"
