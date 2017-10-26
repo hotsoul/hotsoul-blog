@@ -1,25 +1,131 @@
-baseURL = "https://blog.hotsoul.jp/"
-buildDrafts = false
-canonifyURLs = true
-contentDir = "content"
-copyright = "株式会社ホットソウル 2017"
-hasCJKLanguage = true
-languageCode = "ja"
-layoutDir = "layouts"
-publishDir = "public"
-title = "ホットソウルブログ"
+  archetypeDir =                "archetypes"
+  # hostname (and path) to the root, e.g. http://spf13.com/
+  baseURL = "https://blog.hotsoul.jp/"
+  # include content marked as draft
+  buildDrafts =                 false
+  # include content with publishdate in the future
+  buildFuture =                 false
+  # include content already expired
+  buildExpired =                false
+  # enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+  relativeURLs =                false
+  canonifyURLs = true
+  # config file (default is path/config.yaml|json|toml)
+  config =                     "config.toml"
+  contentDir =                  "content"
+  copyright = "株式会社ホットソウル 2017"
+  dataDir =                     "data"
+  defaultExtension =            "html"
+  defaultLayout =               "post"
+  # Missing translations will default to this content language
+  defaultContentLanguage =      "en"
+  # Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+  defaultContentLanguageInSubdir =  false
+  disableLiveReload =           false
+  #
+  # 2017.10.26 WARNIG対策
+  # WARNING: site config's disable404 is deprecated and will be removed in a future release. Use disableKinds=["404"].
+  # Do not build RSS files
+  #disableRSS =                  false
+  # Do not build Sitemap file
+  #disableSitemap =              false
+  # Enable GitInfo feature
+  enableGitInfo =               false
+  # Build robots.txt file
+  enableRobotsTXT =             false
+  # Do not render 404 page
+  #disable404 =                  false
+  # Do not inject generator meta tag on homepage
+  disableHugoGeneratorInject =  false
+  # Allows you to disable all page types and will render nothing related to 'kind';
+  # values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
+  disableKinds = []
+  # Do not make the url/path to lowercase
+  disablePathToLower =          false
+  # Enable Emoji emoticons support for page content; see emoji-cheat-sheet.com
+  enableEmoji =                 false
+  # Show a placeholder instead of the default value or an empty string if a translation is missing
+  enableMissingTranslationPlaceholders = false
+  footnoteAnchorPrefix =        ""
+  footnoteReturnLinkContents =  ""
+  # google analytics tracking id
+  googleAnalytics =             ""
+  # if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
+  hasCJKLanguage = true
+  languageCode = "ja"
+  # the length of text to show in a .Summary
+  summaryLength =              70
+  layoutDir =                   "layouts"
+  # Enable Logging
+  log =                         false
+  # Log File path (if set, logging enabled automatically)
+  #logFile =
+  # maximum number of items in the RSS feed
+  rssLimit =                    15
+  # "toml","yaml", or "json"
+  metaDataFormat =              "toml"
+  newContentEditor =            ""
+  # Don't sync permission mode of files
+  noChmod =                     false
+  # Don't sync modification time of files
+  noTimes =                     false
+  # Pagination
+  paginate =                    10
+  paginatePath =                "page"
+  # See "content-management/permalinks"
+  ##permalinks =
+  # Pluralize titles in lists using inflect
+  pluralizeListTitles =         true
+  # Preserve special characters in taxonomy names ("Gérard Depardieu" vs "Gerard Depardieu")
+  preserveTaxonomyNames =       false
+  # filesystem path to write files to
+  publishDir =                  "public"
+  # enables syntax guessing for code fences without specified language
+  pygmentsCodeFencesGuessSyntax = false
+  # color-codes for highlighting derived from this style
+  pygmentsStyle =               "monokai"
+  # true: use pygments-css or false: color-codes directly
+  pygmentsUseClasses =          false
+  # see "Section Menu for Lazy Bloggers", /templates/menu-templates for more info
+  #SectionPagesMenu =
+  # default sitemap configuration map
+  #sitemap =
+  # filesystem path to read files relative from
+  source =                      ""
+  staticDir =                   "static"
+  # display memory and timing of different steps of the program
+  stepAnalysis =                false
+  # theme to use (located by default in /themes/THEMENAME/)
+  themesDir =                   "themes"
+  theme = "hotsoul-blog"
+  title = "Hotsoul Blog"
+  # if true, use /filename.html instead of /filename/
+  uglyURLs =                    false
+  # verbose output
+  verbose =                     false
+  # verbose logging
+  verboseLog =                  false
+  # watch filesystem for changes and recreate as needed
+  watch =                       true
 
-[taxonomies]
-  category = "categories"
-  tag = "tags"
+  [taxonomies]
+    category = "categories"
+    tag = "tags"
 
-[params]
-  description = "湘南茅ヶ崎にある株式会社ホットソウルの中の人々がつづるブログです。\
-    株式会社ホットソウルでは、ICT事業を中心に、中小企業診断士の資格を活かした経営コンサルティング事業や、農/食関連の新規事業を展開しようとしています。\
-    日常のちょっとしたことがらやICT関連の話題、中小企業の経営について、農業や食に関連する話題など、コンテンツを充実させていきます。"
-  logo = "images/hotsoul_logo.png"
-  homepage = "https://www.hotsoul.jp"
-  email = "info@hotsoul.jp"
-  twitter = "https://twitter.com/HotsoulDotJp"
-  facebook = "https://www.facebook.com/profile.php?id=100015057339736"
-  github = "https://github.com/hotsoul"
+  [params]
+    description = "湘南茅ヶ崎にある株式会社ホットソウルの中の人がつづるブログ。\
+      日常のちょっとした出来事、ICT関連の話題、中小企業の経営について、農業や食に関連する話題など、コンテンツを充実させていきます。"
+    logo = "images/hotsoul_logo.png"
+    homepage = "https://www.hotsoul.jp"
+    email = "info@hotsoul.jp"
+    twitter = "https://twitter.com/HotsoulDotJp"
+    facebook = "https://www.facebook.com/profile.php?id=100015057339736"
+    github = "https://github.com/hotsoul"
+
+  [permalinks]
+    post = "/:year/:month/:slug/"
+
+  [sitemap]
+    changefreq = "monthly"
+    priority = 0.5
+    filename = "sitemap.xml"
