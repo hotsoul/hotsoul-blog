@@ -7,12 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <!-- // SEO編 -->
-<title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
-<meta name="keywords" content="">
-<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-  <meta name="author" content="製作者の名前or会社名">
-  <link rel="canonical" href="正規のURLを検索エンジンにしめす。">
-
+{{ partial "head-seo.html" }}
 <!-- // OGP編 -->
   <meta property="og:site_name" content="サイト名">
   <meta property="og:title" content="ogpのタイトル. <title>と文章も文字数も同じにする。">
