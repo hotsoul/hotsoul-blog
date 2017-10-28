@@ -3,10 +3,10 @@
 <main role="main">
   {{ range first 1 .Data.Pages }}
     <article itemscope itemtype="http://schema.org/Blog">
-      <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02 03:04" }}</time></span>
-    	<h1 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}{{ .WordCount }}</h1>
+      <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02 3:04" }}</time></span>
+    	<h1 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}{{ .WordCount }}</h1>::IsPage[{{ .IsPage }}]::IsHome[{{ .IsHome }}]
       <section itemprop="entry-text">
-				{{ .Content }}{{ .Params.author }}
+				{{ .Content }}
 			</section>
     </article>
   {{ end }}

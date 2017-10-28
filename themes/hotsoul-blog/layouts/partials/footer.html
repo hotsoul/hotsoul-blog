@@ -8,5 +8,5 @@
     {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank"><img src="images/github.png" width="24" height="24" alt="github"></a>{{ end }}
     {{ with .Site.Params.gitlab }}<a href="{{ . }}" target="_blank">GitLab</a>{{ end }}
   </div>
-  <div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}</div>
+  <div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}::IsPage[{{ .IsPage }}]::IsHome[{{ .IsHome }}]</div>
 </footer>
