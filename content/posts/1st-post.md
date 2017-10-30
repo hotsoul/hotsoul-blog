@@ -1,7 +1,7 @@
 ---
 title: "1st Post"
 date: 2017-10-16T15:00:16+09:00
-draft: true
+draft: false
 ---
 
 # MARKDOWNで書くとのことだが、具体的にはどうすれば良い？

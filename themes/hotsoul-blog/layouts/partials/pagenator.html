@@ -1,9 +1,4 @@
-{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-{{ range first 1 .Pages }}
-  {{ with .NextInSection }}
-    <a href="{{ . | urlize }}">次を見る</a>
-  {{ end }}
-  {{ with .PrevInSection }}
-    <a href="{{ . | urlize }}">前を見る</a>
-  {{ end }}
-{{ end }}
+<div class="">
+  {{ with .Prev }}<a href="{{ .URL }}">次を見る</a>{{ end }}
+  {{ with .Next }}<a href="{{ .URL }}">前を見る</a>{{ end }}
+</div>
