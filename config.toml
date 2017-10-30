@@ -114,8 +114,7 @@
 
   [params]
     author = "株式会社ホットソウル"
-    description = "湘南茅ヶ崎にある株式会社ホットソウルの中の人がつづるブログ。\
-      日常のちょっとした出来事、ICT関連の話題、中小企業の経営について、農業や食に関連する話題など、コンテンツを充実させていきます。"
+    description = "湘南茅ヶ崎にある株式会社ホットソウルの中の人がつづるブログ。"
     logo = "images/hotsoul_logo.png"
     homepage = "https://www.hotsoul.jp"
     email = "info@hotsoul.jp"
