@@ -7,7 +7,7 @@ keywords: []
 description: ""
 tags: [ "hugo" ]
 categories: [ "essay", "ICT" ]
-author: ""
-slug: "6th-Post"
+author: "hiro4"
+slug: ""
 ---
 ## frontmatterについて調べる必要があるかも
