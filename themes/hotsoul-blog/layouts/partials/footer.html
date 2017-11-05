@@ -1,10 +1,10 @@
 <footer role="contentinfo">
-  <div class="hr"></div>
+  <!--div class=""></div-->
+  <!--div class="hr"></div-->
   <div class="footer-link">
-    {{ with .Site.Params.homepage }}<a href="{{ . }}" target="_blank"><img src="{{ "images/web.png" | absURL}}" width="24" height="24" alt="homepage"></a>{{ end }}
-    {{ with .Site.Params.twitter }}<a href="{{ . }}" target="_blank"><img src="{{ "images/twi.png" | absURL }}" width="24" height="24" alt="twitter"></a>{{ end }}
-    {{ with .Site.Params.facebook }}<a href="{{ . }}" target="_blank"><img src="{{ "images/fb.png" | absURL }}" width="24" height="24" alt="facebook"></a>{{ end }}
+    {{ with .Site.Params.twitter }}<a href="{{ . }}" target="_blank"><img src="{{ "images/twi32.png" | absURL }}" width="24" height="24" alt="twitter"></a>{{ end }}
+    {{ with .Site.Params.facebook }}<a href="{{ . }}" target="_blank"><img src="{{ "images/fb32.png" | absURL }}" width="24" height="24" alt="facebook"></a>{{ end }}
     {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank"><img src="{{ "images/github.png" | absURL }}" width="24" height="24" alt="github"></a>{{ end }}
   </div>
-  <div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}::IsPage[{{ .IsPage }}]::IsHome[{{ .IsHome }}]</div>
+  <div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}</div>
 </footer>

@@ -1,4 +1,9 @@
-<div class="">
-  {{ with .Prev }}<a href="{{ .URL }}">次を見る</a>{{ end }}
-  {{ with .Next }}<a href="{{ .URL }}">前を見る</a>{{ end }}
-</div>
+<table class="u-full-width">
+  <tbody>
+    <tr>
+      <td>{{ with .Next }}<a href="{{ .URL }}"><img src="{{ "images/left4_48.png" | absURL }}" width="32" height="32" alt="前を見る"></a>{{ end }}</td>
+      <td class=""><a class="" href="/"><img src="{{ "images/home48.png" | absURL }}" width="32" height="32" alt="home"></a></td>
+      <td class="">{{ with .Prev }}<a href="{{ .URL }}"><img src="{{ "images/right4_48.png" | absURL }}" width="32" height="32" alt="次を見る"></a>{{ end }}</td>
+    </tr>
+  </tbody>
+</table>
