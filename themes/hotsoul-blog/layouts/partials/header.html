@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html{{ with .Site.LanguageCode }} lang="{{ . }}"{{ end }}>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/skeleton.css">
-<link rel="stylesheet" href="/css/custom.css">
-<title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
-</head>
-<body>
-
-<div class="container">
-
-  <header>
-		<div class="header-logo">
-			<a href="/"><img src="{{ .Site.Params.logo }}" width="200" height="50" alt="{{ .Site.Title }}"></a>
-		</div>
-	</header>
+<header role="banner">
+  <div class="">
+    <a href="{{ .Site.Params.homepage }}" target="_blank" ><img src="{{ .Site.Params.logo | absURL }}" width="300" height="" alt="{{ .Site.Title }}"></a>
+  </div>
+</header>

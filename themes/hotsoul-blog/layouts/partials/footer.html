@@ -1,11 +1,10 @@
-
-  <footer>
-    <div class="hr"></div>
-    <div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}</div>
-  </footer>
-</div>
-
-<!-- この辺にgoogleAnalyticsの仕込みをするらしい -->
-
-</body>
-</html>
+<footer role="contentinfo">
+  <!--div class=""></div-->
+  <!--div class="hr"></div-->
+  <div class="footer-link">
+    {{ with .Site.Params.twitter }}<a href="{{ . }}" target="_blank"><img src="{{ "images/twi32.png" | absURL }}" width="24" height="24" alt="twitter"></a>{{ end }}
+    {{ with .Site.Params.facebook }}<a href="{{ . }}" target="_blank"><img src="{{ "images/fb32.png" | absURL }}" width="24" height="24" alt="facebook"></a>{{ end }}
+    {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank"><img src="{{ "images/github.png" | absURL }}" width="24" height="24" alt="github"></a>{{ end }}
+  </div>
+  <div class="copyright">Copyright &copy; {{ .Site.Copyright | safeHTML }}</div>
+</footer>
