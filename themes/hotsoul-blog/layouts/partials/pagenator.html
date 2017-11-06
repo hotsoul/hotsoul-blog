@@ -1,9 +1,14 @@
 <table class="u-full-width">
   <tbody>
+    <tr><td></td><td></td><td></td></tr>
     <tr>
-      <td>{{ with .Next }}<a href="{{ .URL }}"><img src="{{ "images/left4_48.png" | absURL }}" width="32" height="32" alt="前を見る"></a>{{ end }}</td>
-      <td class=""><a class="" href="/"><img src="{{ "images/home48.png" | absURL }}" width="32" height="32" alt="home"></a></td>
-      <td class="">{{ with .Prev }}<a href="{{ .URL }}"><img src="{{ "images/right4_48.png" | absURL }}" width="32" height="32" alt="次を見る"></a>{{ end }}</td>
+      <td>
+        {{ if .Next }}<a href="{{ .Next.URL }}"><img src="{{ "images/left4_48.png" | absURL }}" width="32" height="32" alt="前を見る"></a>{{ else }}<div class="spacer32"></div>{{ end }}
+      </td>
+      <td class="icon-home"><a class="" href="/"><img src="{{ "images/home48.png" | absURL }}" width="32" height="32" alt="home"></a></td>
+      <td class="icon-next">
+        {{ if .Prev }}<a href="{{ .Prev.URL }}"><img src="{{ "images/right4_48.png" | absURL }}" width="32" height="32" alt="次を見る"></a>{{ else }}<div class="spacer32"></div>{{ end }}
+      </td>
     </tr>
   </tbody>
 </table>

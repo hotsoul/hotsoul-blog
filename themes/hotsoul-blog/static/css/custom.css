@@ -1,5 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 body {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   background-color: #FCFCFC;
 }
 
@@ -19,7 +23,7 @@ img {
 
 header,
 footer {
-  margin: 4rem 0;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -48,7 +52,7 @@ main {
 }
 
 .entry-title {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .entry-title a {
@@ -73,4 +77,18 @@ main {
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(#E1E1E1), to(white));
   background: -webkit-linear-gradient(left, white, #E1E1E1, white);
   background: linear-gradient(to right, white, #E1E1E1, white);
+}
+
+.icon-home {
+  text-align: center;
+}
+
+.icon-next {
+  text-align: right;
+}
+
+.spacer32 {
+  clear: both;
+  width: 32px;
+  height: 32px;
 }

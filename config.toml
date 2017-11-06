@@ -108,6 +108,9 @@
   # watch filesystem for changes and recreate as needed
   watch =                       true
 
+  [blackfriday]
+    hrefTargetBlank = true
+
   [taxonomies]
     category = "categories"
     tag = "tags"
