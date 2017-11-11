@@ -5,7 +5,7 @@ lastmod: 2017-11-06T11:51:24+09:00
 draft: false
 keywords: []
 description: "株式会社ホットソウル従業員募集のプロモーション第1弾として、FC2で細々やってきたブログをHugoでリニューアル。Hugoで作成し、GitHubPages x 独自ドメインで公開するまでの記録。今回はHugo編。"
-tags: [ "hugo", "GitHubPages", "独自ドメイン" ]
+tags: [ "Hugo", "GitHubPages", "独自ドメイン" ]
 categories: [ "essay", "ICT" ]
 author: "hiroshi"
 slug: "My-First-Hugo"
