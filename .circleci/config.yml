@@ -44,8 +44,10 @@ jobs:
           command: |
             cd hotsoul.github.io
             mv ~/hotsoul-blog/public/* ./
-            git add .
-            git commit -m "[ci skip] push new contents"
+            git config --global user.name "${GIT_USER_NAME}"
+            git config --global user.email "${GIT_USER_EMAIL}"
+            git add --all
+            git commit -m "push contents [ci skip]"
             git push
 
 workflows:
