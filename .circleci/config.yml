@@ -37,6 +37,12 @@ jobs:
       - restore_cache:
           keys:
             - hotsoul-blog-public
+      - run:
+          name: add contents
+          command: |
+            pwd
+            cd ~/
+            ls -laR
 
 workflows:
   version: 2
