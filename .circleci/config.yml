@@ -19,7 +19,9 @@ jobs:
 
   deploy:
     working_directory: ~/public-repo
-    machine: true
+    machine:
+      enabled: true
+      timezone: Asia/Tokyo
     steps:
       - run:
           name: clone
