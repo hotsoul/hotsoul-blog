@@ -31,3 +31,12 @@ jobs:
       - restore_cache:
           keys:
             - hotsoul-blog-public
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
