@@ -23,7 +23,7 @@ jobs:
     steps:
       - run:
           name: clone
-          command: git clone https://github.com/hotsoul/hotsoul.github.io.git
+          command: git clone git@github.com:hotsoul/hotsoul.github.io.git
       - run:
           name: clean
           command: |
