@@ -16,3 +16,18 @@ jobs:
           key: hotsoul-blog-public-{{ epoch }}
           paths:
             - ~/hotsoul-blog/public
+
+  deploy:
+    working_directory: ~/hotsoul.github.io
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: clean
+          command: |
+            pwd
+            ls -la
+            ls -lR
+      - restore_cache:
+          keys:
+            - hotsoul-blog-public
