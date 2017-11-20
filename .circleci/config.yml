@@ -18,10 +18,12 @@ jobs:
             - ~/hotsoul-blog/public
 
   deploy:
-    working_directory: ~/hotsoul.github.io
+    working_directory: ~/public
     machine: true
     steps:
-      - checkout
+      - run:
+          name: clone
+          command: git clone https://github.com/hotsoul/hotsoul.github.io.git
       - run:
           name: clean
           command: |
