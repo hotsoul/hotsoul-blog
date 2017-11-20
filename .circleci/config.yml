@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/hotsoul-blog
     docker:
       - image: circleci/golang:latest
 
@@ -14,4 +15,5 @@ jobs:
       - run:
           name: build hugo
           command: |
-            ls -la
+            ls -lR
+            hugo -t hotsoul-blog
