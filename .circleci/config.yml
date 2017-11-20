@@ -13,4 +13,6 @@ jobs:
 
       - run:
           name: build hugo
-          command: pwd
+          command:|
+            pwd
+            ls -la
