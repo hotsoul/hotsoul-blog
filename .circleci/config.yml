@@ -30,7 +30,7 @@ jobs:
             cd hotsoul.github.io
             mv CNAME ../
             mv .git ../
-            rm -rf
+            rm -rf ./*
             mv ../CNAME ./
             mv ../.git ./
             ls -la
