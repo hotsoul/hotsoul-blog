@@ -2,7 +2,7 @@
 title: "初めての GitHubPages でブログを公開"
 date: 2017-11-07T11:27:55+09:00
 lastmod: 2017-11-07T11:27:55+09:00
-draft: true
+draft: false
 keywords: []
 description: "株式会社ホットソウル従業員募集のプロモーション第1弾として、FC2で細々やってきたブログをHugoでリニューアル。Hugoで作成し、GitHubPages x 独自ドメインで公開するまでの記録。今回はGitHubPages編。"
 tags: [ "Hugo", "GitHubPages", "独自ドメイン" ]
