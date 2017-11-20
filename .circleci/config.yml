@@ -4,16 +4,15 @@ jobs:
     working_directory: ~/hotsoul-blog
     docker:
       - image: circleci/golang:latest
-
     steps:
       - checkout
-
       - run:
           name: install hugo
           command: go get -v github.com/gohugoio/hugo
-
       - run:
           name: build hugo
-          command: |
-            ls -lR
-            hugo -t hotsoul-blog
+          command: hugo -t hotsoul-blog
+      - save_cache:
+          key: hotsoul-blog-public-{{ epoch }}
+          paths:
+            - ~/hotsoul-blog/public
