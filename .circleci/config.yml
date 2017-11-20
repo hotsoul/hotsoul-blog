@@ -18,7 +18,7 @@ jobs:
             - ~/hotsoul-blog/public
 
   deploy:
-    working_directory: ~/public
+    working_directory: ~/public-repo
     machine: true
     steps:
       - run:
@@ -27,9 +27,13 @@ jobs:
       - run:
           name: clean
           command: |
-            pwd
+            cd hotsoul.github.io.git
+            mv CNAME ../
+            mv .git ../
+            rm -rf
+            mv ../CNAME ./
+            mv ../.git ./
             ls -la
-            ls -lR
       - restore_cache:
           keys:
             - hotsoul-blog-public
