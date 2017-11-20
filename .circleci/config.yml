@@ -3,13 +3,14 @@ jobs:
   build:
     docker:
       - image: circleci/golang:latest
+
     steps:
       - checkout
+
       - run:
           name: install hugo
           command: go get -v github.com/gohugoio/hugo
+
       - run:
           name: build hugo
-          command:|
-            cd hotsoul-blog
-            hugo -t hotsoul-blog
+          command: cd hotsoul-blog
