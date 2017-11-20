@@ -8,7 +8,9 @@ jobs:
       - run:
           name: install hugo
           command: go get -v github.com/gohugoio/hugo
+     - run:
+          name: echo-dir
+          command: pwd
       - run:
           name: build hugo
-          pwd: blog/
           command: hugo -t hotsoul-blog
