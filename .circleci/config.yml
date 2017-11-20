@@ -10,5 +10,6 @@ jobs:
           command: go get -v github.com/gohugoio/hugo
       - run:
           name: build hugo
-          pwd: hotsoul-blog/
-          command: hugo -t hotsoul-blog
+          command:|
+            cd hotsoul-blog
+            hugo -t hotsoul-blog
