@@ -27,7 +27,7 @@ jobs:
       - run:
           name: clean
           command: |
-            cd hotsoul.github.io.git
+            cd hotsoul.github.io
             mv CNAME ../
             mv .git ../
             rm -rf
