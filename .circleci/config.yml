@@ -40,11 +40,13 @@ jobs:
           keys:
             - hotsoul-blog-public
       - run:
-          name: add contents
+          name: push contents
           command: |
             cd hotsoul.github.io
             mv ~/hotsoul-blog/public/* ./
-            ls -la
+            git add .
+            git commit -m "[ci skip] push new contents"
+            git push
 
 workflows:
   version: 2
