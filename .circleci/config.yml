@@ -1,16 +1,13 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/hotsoul-blog
-    machine: true
+    docker:
+      - images: circleci/golang:latest
     steps:
       - checkout
       - run:
           name: install hugo
           command: go get -v github.com/gohugoio/hugo
-      - run:
-          name: install pygments
-          command: pip install pygments
       - run:
           name: build hugo
           pwd: blog/
