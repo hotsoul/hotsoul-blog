@@ -1,14 +1,17 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: debian:stretch
+    working_directory: ~/hotsoul-blog
+    machine: true
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: install hugo
+          command: go get -v github.com/gohugoio/hugo
       - run:
-          name: Print the Current Time
-          command: date
-
+          name: install pygments
+          command: pip install pygments
+      - run:
+          name: build hugo
+          pwd: blog/
+          command: hugo -t hotsoul-blog
