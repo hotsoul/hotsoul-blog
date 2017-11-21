@@ -42,7 +42,7 @@ jobs:
           command: |
             cd hotsoul.github.io
             mv ~/hotsoul-blog/public/* ./
-            git config --global user.name $CIRCLE_USERNAME
+            git config --global user.name ${CIRCLE_USERNAME}
             git config --global user.email "hiro4.to.pyonkiti@gmail.com"
             git add --all
             git commit -m "push contents [ci skip]"
