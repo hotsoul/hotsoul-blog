@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: install hugo
-          command: go get -v github.com/gohugoio/hugo
+          command: go get -v github.com/gohugoio/hugo/releases
       - run:
           name: build hugo
           command: hugo -t hotsoul-blog
