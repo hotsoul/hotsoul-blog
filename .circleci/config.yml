@@ -37,13 +37,16 @@ jobs:
       - restore_cache:
           keys:
             - hotsoul-blog-public
+      - add-ssh-keys:
+          fingerprints:
+            - "04:70:bd:a2:5b:0c:d1:1a:54:ff:d6:c7:85:44:bc:45"
       - run:
           name: push contents
           command: |
             cd hotsoul.github.io
             mv ~/hotsoul-blog/public/* ./
             git config --global user.name ${CIRCLE_USERNAME}
-            git config --global user.email "hiro4.to.pyonkiti@gmail.com"
+            git config --global user.email ${GIT_USER_EMAIL}
             git add --all
             git commit -m "push contents [ci skip]"
             git push
