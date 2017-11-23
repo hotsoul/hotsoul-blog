@@ -49,7 +49,7 @@
   footnoteAnchorPrefix =        ""
   footnoteReturnLinkContents =  ""
   # google analytics tracking id
-  googleAnalytics =             ""
+  googleAnalytics =             "UA-110116298-1"
   # if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
   hasCJKLanguage = true
   languageCode = "ja"
