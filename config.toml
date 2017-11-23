@@ -118,6 +118,7 @@
   [params]
     author = "株式会社ホットソウル"
     description = "湘南茅ヶ崎にある株式会社ホットソウルの中の人がつづるブログ。"
+    favicon = "images/favicon.ico"
     logo = "images/hotsoul_logo.png"
     homepage = "https://www.hotsoul.jp"
     twitter = "https://twitter.com/HotsoulDotJp"
