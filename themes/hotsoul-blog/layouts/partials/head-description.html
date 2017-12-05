@@ -1,1 +1,1 @@
-{{- if .IsPage }}{{ printf "%s%s" .Site.Params.description .Description }}{{ else }}{{ .Site.Params.description }}{{ end -}}
+{{- if .IsPage }}{{ printf "%s%s" .Description .Site.Params.description }}{{ else }}{{ .Site.Params.description }}{{ end -}}
