@@ -13,7 +13,7 @@
   # config file (default is path/config.yaml|json|toml)
   config =                     "config.toml"
   contentDir =                  "content"
-  copyright = "株式会社ホットソウル 2017"
+  copyright = "株式会社ホットソウル 2017-2018"
   dataDir =                     "data"
   defaultExtension =            "html"
   defaultLayout =               "post"
