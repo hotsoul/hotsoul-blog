@@ -18,38 +18,38 @@ jobs:
             - ~/hotsoul-blog/public
 
   deploy:
-    working_directory: ~/public-repo
-    machine: true
-    steps:
-      - run:
-          name: clone
-          command: git clone git@github.com:hotsoul/hotsoul.github.io.git
-      - run:
-          name: clean
-          command: |
-            cd hotsoul.github.io
-            mv CNAME ../
-            mv .git ../
-            rm -rf ./*
-            mv ../CNAME ./
-            mv ../.git ./
-            ls -la
-      - restore_cache:
-          keys:
-            - hotsoul-blog-public
-      - add-ssh-keys:
-          fingerprints:
-            - "04:70:bd:a2:5b:0c:d1:1a:54:ff:d6:c7:85:44:bc:45"
-      - run:
-          name: push contents
-          command: |
-            cd hotsoul.github.io
-            mv ~/hotsoul-blog/public/* ./
-            git config --global user.name ${CIRCLE_USERNAME}
-            git config --global user.email ${GIT_USER_EMAIL}
-            git add --all
-            git commit -m "push contents [ci skip]"
-            git push
+      #    working_directory: ~/public-repo
+      #machine: true
+      #steps:
+      #- run:
+      #    name: clone
+      #    command: git clone git@github.com:hotsoul/hotsoul.github.io.git
+      #- run:
+      #    name: clean
+      #    command: |
+      #      cd hotsoul.github.io
+      #      mv CNAME ../
+      #      mv .git ../
+      #      rm -rf ./*
+      #      mv ../CNAME ./
+      #      mv ../.git ./
+      #      ls -la
+      #- restore_cache:
+      #    keys:
+      #      - hotsoul-blog-public
+      #- add-ssh-keys:
+      #    fingerprints:
+      #      - "04:70:bd:a2:5b:0c:d1:1a:54:ff:d6:c7:85:44:bc:45"
+      #- run:
+      #    name: push contents
+      #    command: |
+      #      cd hotsoul.github.io
+      #      mv ~/hotsoul-blog/public/* ./
+      #      git config --global user.name ${CIRCLE_USERNAME}
+      #      git config --global user.email ${GIT_USER_EMAIL}
+      #      git add --all
+      #      git commit -m "push contents [ci skip]"
+      #      git push
 
 workflows:
   version: 2
